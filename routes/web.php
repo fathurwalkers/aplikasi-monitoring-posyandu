@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\BackController;
+use App\Http\Controllers\CatatanImunisasi;
 use App\Http\Controllers\GenerateController;
 use App\Http\Controllers\HomeController;
 
@@ -25,6 +26,7 @@ Route::group(['prefix' => '/dashboard', 'middleware' => 'ceklogin'], function ()
     Route::get('/generate-bidan', [GenerateController::class, 'generate_bidan'])->name('generate-bidan');
     Route::get('/generate-jadwal', [GenerateController::class, 'generate_jadwal'])->name('generate-jadwal');
     Route::get('/chained-generate', [GenerateController::class, 'chained_generate'])->name('chained-generate');
+    Route::get('/catatan-imunisasi', [CatatanImunisasi::class, 'catatan_imunisasi'])->name('catatan-imunisasi');
 
     // DAFTAR Route
     Route::get('/daftar-bidan/data', [BackController::class, 'daftar_bidan'])->name('daftar-bidan');

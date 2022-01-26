@@ -116,7 +116,7 @@
           </li>
 
           <li class="nav-item">
-            <a href="#" class="nav-link text-center">
+            <a href="{{ route('catatan-imunisasi') }}" class="nav-link text-center">
               <i class="fas fa-archive"></i>
                 <span class="small d-block">Catatan Imunisasi</span>
             </a>
